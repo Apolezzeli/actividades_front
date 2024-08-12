@@ -45,5 +45,9 @@ a {
 
 div {
     margin-top: 40px 0;
-    border-bottom: 1px solid #ff6550;
+    border-bottom: 1px solid #000;
+}
+.destacado{
+    color: #ff6550;
+    font-weight: bold;
 }
