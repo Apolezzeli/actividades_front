@@ -1,0 +1,81 @@
+/*
+font-family: "Raleway", sans-serif;
+
+font-family: "Roboto", sans-serif;
+*/
+.bg-body-tertiary {
+    background-color: #a68069 !important;
+}
+
+footer {
+    background-color: #a68069;
+}
+
+h1,
+h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+.hero {
+    background: url(../img/portada_provisoria.jpeg);
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+}
+
+.staff {
+    background-color: #ffffeb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
+}
+
+.carousel-inner {
+    text-align: center;
+    /* Centra el contenido del carrusel, incluyendo imágenes y texto */
+    padding-bottom: 30px;
+    /* Ajusta el valor según lo necesites */
+}
+
+.carousel-inner img {
+    width: 20% !important;
+    /* Sobrescribe el w-100 */
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.carousel-inner p {
+    text-align: center;
+    /* Centra el texto dentro de los párrafos */
+    font-style: italic;
+    /* Opcional, mantiene el estilo cursiva si lo necesitas */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: -1px;
+    /* Ajusta este valor según tus necesidades */
+    background-color: #5b4636;
+    /* Cambia el color del fondo de las flechas */
+}
+
+.carousel-indicators button {
+    background-color: #ddc1a7 !important;
+}
+
+.carousel-indicators button.active {
+    background-color: #5b4636 !important;
+    /* Marrón más oscuro para el botón activo */
+}
