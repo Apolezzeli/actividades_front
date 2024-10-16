@@ -212,3 +212,16 @@ p.cierre{
     background-color: #5b4636 !important;
     /* Marrón más oscuro para el botón activo */
 }
+
+.form-container {
+    background-color: #ffffeb; /* Cambia el color a blanco u otro color deseado */
+    color:#333
+}
+
+.custom-btn {
+    background-color: #6C7059; /* Color verde personalizado */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 20px;
+    font-size: 16px;
+}
