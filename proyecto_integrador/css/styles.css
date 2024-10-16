@@ -11,31 +11,164 @@ footer {
     background-color: #a68069;
 }
 
-h1,
-h2 {
+h1 {
     font-family: "Roboto", sans-serif;
     text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    margin-top: 20px;  /* Margen superior de 20px */
+    margin-bottom: 30px;  /* Margen inferior de 30px */
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 50px;
 }
 
 h3 {
+    margin-top: 20px;  /* Margen superior de 20px */
+    margin-bottom: 30px;  /* Margen inferior de 30px */
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+}
+
+h4 {
+    margin-top: 30px;  /* Margen superior de 20px */
+    margin-bottom: 20px;  /* Margen inferior de 30px */
+    font-family: "Raleway", sans-serif;
+    font-size: 27px;
+}
+
+p, ul {
+    font-size: 20px;
     font-family: "Raleway", sans-serif;
 }
 
-.hero {
-    background: url(../img/portada_provisoria.jpeg);
-    background-size: cover;
-    height: 50vh;
-    min-height: 600px;
-    color: white;
+.logo-img {
+    height: 80px; /* Ajusta este valor al tamaño que quieras */
+    width: auto;  /* Mantiene la proporción original de la imagen */
+    object-fit: cover;  /* Recorta el logo para que ocupe el contenedor sin dejar espacio */
+    object-position: center;  /* Centra el logo dentro del contenedor */
 }
 
-.staff {
+
+.hero {
+    position: relative;
+    height: 70vh; /* Altura del contenedor hero */
+    min-height: 300px;
+    overflow: hidden; /* Asegura que nada se desborde del contenedor */
+}
+
+.background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/portada_background.jpg) no-repeat center center;
+    background-size: cover;
+    filter: blur(8px); /* Difumina el fondo */
+    z-index: 1;
+}
+
+.foreground-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%; /* Ajusta el tamaño máximo de la imagen centrada */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    z-index: 2;
+    object-fit: contain; /* Mantiene las proporciones dentro del contenedor */
+}
+
+
+.staff-light-yellow {
     background-color: #ffffeb;
 }
+
+.staff-light-green {
+    background-color: #6C7059;
+}
+
+.leter-color-light-yellow {
+    color: #ffffeb;
+}
+
 
 html {
     scroll-behavior: smooth;
 }
+
+.balloon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los globos */
+    padding: 20px;
+    background-image: url('img/background.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Para que cubra todo el contenedor */
+    background-position: center;
+    position: relative; /* Posiciona relativo al contenedor */
+}
+
+
+.balloon {
+    background-color: #f5e4c3; /* Color del globo */
+    border-radius: 50px; /* Bordes redondeados para crear la forma del globo */
+    padding: 20px;
+    max-width: 1500px; /* Ancho máximo del globo */
+    text-align: center;
+    border: 2px solid #c3b091; /* Borde del globo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.balloon p {
+    margin: 0; /* Elimina el margen de los párrafos dentro del globo */
+    color: #333;
+    font-family: "Arial", sans-serif;
+}
+
+/* Para alternar la alineación en zigzag */
+.zigzag-left {
+    align-self: flex-start; /* Alinea los globos hacia la izquierda */
+}
+
+.zigzag-right {
+    align-self: flex-end; /* Alinea los globos hacia la derecha */
+}
+
+/* Solo aplica la eliminación de bullets y los iconos de check y cruz a la lista con la clase .check-list */
+.check-list {
+    list-style: none; /* Elimina los bullets solo en esta lista */
+    padding-left: 0; /* Elimina la indentación */
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.check-list li.check::before {
+    content: "\2714"; /* Check: ✓ */
+    color: green;
+    margin-right: 10px;
+}
+
+.check-list li.cross::before {
+    content: "\2716"; /* Cruz: ✘ */
+    color: red;
+    margin-right: 10px;
+}
+
+p.cierre{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
 
 .scroll_section {
     scroll-margin-top: 60px;
@@ -49,7 +182,7 @@ html {
 }
 
 .carousel-inner img {
-    width: 20% !important;
+    width: 50% !important;
     /* Sobrescribe el w-100 */
     height: auto;
     display: inline-block;
