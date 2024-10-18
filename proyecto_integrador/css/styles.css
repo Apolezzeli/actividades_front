@@ -11,6 +11,10 @@ footer {
     background-color: #a68069;
 }
 
+.custom-instagram-icon {
+    color: black; /* El color que prefieras */
+}
+
 h1 {
     font-family: "Roboto", sans-serif;
     text-align: center;
@@ -92,6 +96,10 @@ p, ul {
     background-color: #6C7059;
 }
 
+.staff-light-brown {
+    background-color: #998C77;
+}
+
 .leter-color-light-yellow {
     color: #ffffeb;
 }
@@ -106,6 +114,7 @@ html {
     flex-direction: column;
     gap: 20px; /* Espacio entre los globos */
     padding: 20px;
+    background-color: #ffffeb;
     background-image: url('img/background.jpg'); /* Cambia la ruta a tu imagen */
     background-size: cover; /* Para que cubra todo el contenedor */
     background-position: center;
@@ -114,13 +123,13 @@ html {
 
 
 .balloon {
-    background-color: #f5e4c3; /* Color del globo */
+    background-color: #D6C7A9; /* Color del globo */
     border-radius: 50px; /* Bordes redondeados para crear la forma del globo */
     padding: 20px;
-    max-width: 1500px; /* Ancho máximo del globo */
+    width: 95%; /* Ancho del globo ajustado, usa un porcentaje o valor fijo */
     text-align: center;
     border: 2px solid #c3b091; /* Borde del globo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
 }
 
 .balloon p {
@@ -224,4 +233,20 @@ p.cierre{
     border: none; /* Sin bordes */
     padding: 10px 20px;
     font-size: 16px;
+}
+
+.custom-btn:hover {
+    background-color: #484B3D; /* Color cuando haces hover */
+    color: white; /* Color del texto cuando haces hover */
+}
+
+.custom-margin {
+    margin-top: 6rem; /* o cualquier valor mayor */
+    background-color:#ffffeb;
+}
+
+.custom-margin-trascendidos {
+    margin-left: 9rem; /* o cualquier valor mayor */
+    background-color:#6C7059;
+
 }
